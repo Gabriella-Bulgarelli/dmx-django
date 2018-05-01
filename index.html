@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MJ 487 Project 3">
+    <meta name="author" content="Gabriella Bulgarelli">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>DMX Data Viz</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+    <!-- end fonts -->
+  </head>
+
+  <body>
+
+
+    <audio controls autoplay>
+      <source src="ruff.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav id="navo" class="navbar navbar-default">
+
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img id="gabs" src="img/glogo.png"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+    <div class="container-fluid">
+
+      <div class="row heading">
+
+        <div class="col-xs-0 col-md-1"></div>
+
+        <div class="col-md-10">
+
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-xs-0 col-md-1"></div>
+
+        <div class="col-md-10">
+            <h5><a id="linky" href="#">MUSIC/HIP-HOP</a></h5>
+          <!-- <img id="kanye" src="img/kanye.png" alt="kanye"> -->
+
+          <h1>It's Dark and Hell Is Hot: </h1>
+          <h3>Did this daring debut revitalize east-coast gangster rap? </h3>
+            <h5>By Gabriella Bulgarelli</h5>
+            <h6>Sunday, April 23rd, 2018</h6>
+
+              <!-- <p id="credit">Thanks to the team at <a href="http://www.whosampled.com">Who Sampled</a> for compiling a data set for me to use in this project!<p> -->
+
+            <h6>
+                This is my second installment in my data driven rap series. You can view the first project, a look at Kanye West's sampling history,<a href="http://www.gabriellabulgarelli.com/mj487/project3"> here.</a></h6>
+
+              </div>
+              <hr class="divider" width="70%" noshade color="gray">
+       <div class="container-fluid">
+         <div class="row">
+ <div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10">
+ <h3>Mischevous Man</h3>
+ <h4>Ever since the release of his first album, Its Dark and Hell is Hot (1998), DMX has been making headlines. He has been in and out of prison and rehab, has created fashion lines and even broadcast his reunion with his son. In this data dashboard we will explore the discography of this highly prolific rapper, paying specific attention to his first release and how it changed the landscape of rap at the time. </h4>
+ </div>
+ </div>
+ </div>
+               <hr class="divider" width="70%" noshade color="gray">
+
+        <div class="container-fluid">
+          <div class="row">
+  <div class="col-xs-0 col-md-1"></div>
+ <div class="col-md-10">
+  <h3>It has to be said...</h3>
+  <h4>but I myself don't particularly like DMX or his music. I find myself offended by his lyrics, and in awe of his flippant, mercurial, and agressive behavior in the media. I've heard Kendrick talk about how DMX's song "Damien" influenced him. I've watched the video of him learning to use Google and it did not evoke the same level of compassion that my mother does when my siblings try to teach her, but I am trying to keep an open mind while working on this project, and I am hoping to learn something.</h4>
+
+<center><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BcGKKI4Bfwb/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BcGKKI4Bfwb/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Only on @Spotify</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/dmx/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> DMX</a> (@dmx) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-29T22:39:29+00:00">Nov 29, 2017 at 2:39pm PST</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+</center>
+  <h4>  I even saw him post about Christmas music? Maybe this is not a song that needed to exist; but, although it is obvious that objectivity is almost entirely impossible moving forward, I hope it will not affect my presentation of this data. Let's dive in.</h4>
+
+
+  </div>
+  </div>
+  </div>
+                <hr class="divider" width="70%" noshade color="gray">
+        <div class="container-fluid">
+          <div class="row">
+  <div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10">
+  <h3 id="genre">DMX's Upbringing</h3>
+  <h4>DMX was born Earl Simmons in December 1970 in Mount Vernon, New York. He was brought up as a Jehovah's Witness, and his childhood was riddled with abuse, arrests, and stints in group homes. </h4>
+  <h5>Use the toggling feature below to explore his hometown.</h5>
+<center>  <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/streetview?location=40.9126,-73.8371&key=AIzaSyAB_p9BbpR8Bz9i0ktkxziSoJVXXB74Ck0" allowfullscreen></iframe></center>
+</div>
+</div>
+<hr class="divider" width="70%" noshade color="gray">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10">
+<h3 id="genre">Rap Sheet: DMX's Legal Struggles</h3>
+<h4>Below you will find a streamgraph distribution of DMX's lifelong battle against the American legal system.</h4>
+<h4> The rapper has been in prison multiple times in addition to being arrested for things like animal cruelty, identity theft, reckless/unlicensed driving, and drug possesion.*</h4>
+<h6>Select and drag to zoom in.</h6>
+<div id="container">
+</div>
+<h6>*This rap sheet is honestly quite impressive.</h6>
+</div>
+</div>
+<hr class="divider" width="70%" noshade color="gray">
+<div class="container-fluid">
+ <div class="row">
+<div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10" >
+ <h3 id="favorites">The Simplest Lexicon in the Game</h3>
+ <h4>It may not come as a surprise to some, but DMX has the worst vocabulary in the rap game. The survey, which was done by Matt Daniels at The Pudding in 2017 (shown below) ranks him the lowest of all 85 rappers included; but, just slightly lower than other East Coast wordsmiths 50 Cent, Nicki Minaj, and Salt N Pepa.</h4>
+ <img id="pudding" src=img/dmx.png height="456" width="836">
+
+<h4>As seen above, the most eloquent east-coast artists are:
+ <ol>
+   <li>Aesop Rock</li>
+   <li>GZA (only solo albums)</li>
+   <li>Kool Keith</li>
+   <li>RZA (only solo albums)</li>
+ </ol>
+ <h5>Is this lack of vocabulary neccesarily a problem?</h5>
+  <h4>I don't know if I can really say, however I'd like to leave a quote from Jay-Z's <em>Moment of Clarity</em>as food for thought:<br><br>
+    "I dumbed down for my audience to double my dollars<br>
+
+  They criticized me for it, yet they all yell "holla"<br>
+
+  If skills sold, truth be told, <br>I'd probably be
+
+  lyrically Talib Kweli<br>
+
+  Truthfully I wanna rhyme like Common sense<br>
+
+  But I did 5 mil - I ain't been rhyming like Common since"</h4>
+
+</div>
+</div>
+</div>
+<hr class="divider" width="70%" noshade color="gray">
+<div class="container-fluid">
+ <div class="row">
+<div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10" >
+ <h3 id="favorites">DMX Album Certifications and Billboard Peak Positions</h3>
+ <h4>Haters will say its photoshopped, but most of DMX's albums have debuted or peaked at #1 on the Billboard chart. This bar graph highlights the album certifications and peak positions on the Billboard chart for DMX.</h4>
+ <h6>ALBUM TITLES ARE ABBREVIATED! See chart at the bottom of this page!</h6>
+
+<div id="container3" style="height: 400px"></div>
+<h4>As seen above, the most commercially successful DMX albums are:
+ <ol>
+   <li>(1998) Its Dark and Hell is Hot (US Sales of 4,674,000)</li>
+   <li>(1999) ...And Then There Was X (US Sales of 4,950,000)</li>
+   <li>(1998) Flesh of my Flesh, Blood of my Blood (US Sales of 3,417,000)</li></h4>
+
+  <h4>And the least commercially successful albms are:
+    <ol>
+      <li>(2006) Year of the Dog, Again (US Sales of only 125,000, first DMX album that did not debut at #1 on the Billboard chart)</li>
+      <li>(2012) Undisputed (US Sales of only 17,000 copies, and debuted at #19 on the Billboard chart)</li>
+ </ol>
+</h4>
+<div id="container7" style="height: 400px"></div>
+  <h4>*Remember-the goal here is to have the highest (lowest on this graph) peak position and the highest number of weeks on the chart!*</h4>
+</div>
+</div>
+</div>
+<!-- <hr class="divider" width="70%" noshade color="gray"> -->
+<!-- <div class="container-fluid">
+ <div class="row">
+<div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10">
+ <h3 id="comparisons">More data here!</h3>
+ <h4>Info about this data</h4>
+ <h4>more info about this data.</h4>
+ <h6>footnote about this data </h6>
+ <h6>footnote about this data</h6>
+    <div id="container4" style="height: 400px"></div>
+    <h4>*more info about this data</h4>
+
+ </div>
+ </div>
+ <hr class="divider" width="70%" noshade color="gray">
+ <div class="container-fluid">
+  <div class="row">
+ <div class="col-xs-0 col-md-1"></div>
+ <div class="col-md-10">
+   <h3 id="comparisons">More data here!</h3>
+   <h4>Info about this data</h4>
+   <h4>more info about this data.</h4>
+   <h6>footnote about this data </h6>
+   <h6>footnote about this data</h6>
+      <div id="container5" style="height: 400px"></div>
+      <h4>*more info about this data</h4>
+ </div>
+  </div>
+  </div>
+ <hr class="divider" width="70%" noshade color="gray">
+<div class="container-fluid">
+  <div class="row">
+<div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10">
+  <h3 id="time">Info about DMX</h3>
+  <h4>Facts facts facts</h4>
+  <h4>Analysis</h4>
+  <h4>la di da</h4>
+  <h4>more shit.</em></h4>
+
+
+</div>
+  </div>
+  </div> -->
+ <hr class="divider" width="70%" noshade color="gray">
+<div class="container-fluid">
+  <div class="row">
+<div class="col-xs-0 col-md-1"></div>
+<div class="col-md-10">
+  <h3 id="elements">A Breakdown of Its Dark and Hell is Hot</h3>
+  <h4>DMX's producers most frequently sampled for his debut album using multiple elements of a song, followed most closely by their use of just lyrics. They never utilized any previously existing bass lines on the album. </h4>
+  <div id="container2"></div>
+  <h4>Take a look at what genres influenced the album:</h4>
+<div id="container22">
+</div>
+</div>
+</div>
+ <hr class="divider" width="70%" noshade color="gray">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+<div class="jumbotron">
+  <div class="container">
+    <h3 id="tabley"></h3>
+<h3>Explore DMX's Studio Releases</h3>
+<h4>All 7 of them!</h4>
+    <p><table id="table2" class="display" cellspacing="0" width="95%">
+            <thead>
+                <tr>
+                    <th>Album Title </th>
+                    <th>Release Year</th>
+                    <th>Label</th>
+                    <th>Peak Billboard Position</th>
+
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                  <th>Album Title </th>
+                  <th>Release Year</th>
+                  <th>Label</th>
+                  <th>Peak Billboard Position</th>
+                </tr>
+            </tfoot>
+        </table></p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+ <hr class="divider" width="70%" noshade color="gray">
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/streamgraph.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/annotations.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+      <script src="dropdown.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
+
+<!-- https://www.kaggle.com/donyoe/kanye-sentiment-analysis-and-wordcloud -->
